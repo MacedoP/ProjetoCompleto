@@ -5,3 +5,8 @@
 lass="w-32 h-32" => isso quer dizer que a minha foto tera um width: 32px e uma heidth: 32px
 rounded-lg => igual ao border-radius
 md:text-3xl => abreviacao de media-querie
+
+data-name=" Humberguer Smach" |
+data-price="3.000"            | essas duas propriedadee seram utilizadas no nosso js, para quando clicarmos no cart nos fizer qual foi clicado e quanto costa
+
+lg:grid-cols-3=> media para tela com 1024px

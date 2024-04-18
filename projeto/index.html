@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Burguer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="../projeto/style/output.css">
 </head>
 <body>
@@ -15,7 +17,7 @@
             <h1 class="text-3xl mt-2 mb-2 font-bold text-white">Dev Burguer</h1>
             <span class="text-white font-medium">Rua 40, Zona Verde</span>
 
-            <div class="bg-green-600 text-white rounded-lg px-4 py-1 mt-6" id="date-span">
+            <div class="bg-green-600 text-white rounded-lg px-4 py-1 mt-5" id="date-span">
                 <span class="font-medium">Seg á Dom -18:00 as 22:00</span>
             </div>
         </div>
@@ -28,21 +30,217 @@
 
      <!--Inicio Menu-->
      <div id="menu">
-        <main>
-            <!--Produto Item ou fotos dos Humbe-->
-            <div>
+        <main class="grid grid-cols-1 gap-8 lg:grid-cols-3 md:gap-10 mx-auto max-w-7xl md:grid-cols-2 px-4 mb-16">
+            <!--Produto Item ou fotos dos Humbe foto1-->
+            <div class="flex gap-2">
                 <img src="./photo/hamb-1.png" alt="Humber  smach" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300 cursor-pointer">
-                <div>
+                <div >
                     <p class="font-bold">Humberguer Smach </p>
-                    <p>Pao levinho de fermenmto natural da trigou, burguer 160g, queijo prato e maionese da casa</p>
-                </div>
-                
-            </div>
-            <!--Produto Item ou fotos dos Humbe-->
+                    <p class="text-sm">Pao levinho de fermenmto natural da trigou, burguer 160g, queijo prato e maionese da casa</p>
 
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="text-lg font-bold">Ft 3000</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                            data-name=" Humberguer Smach"
+                            data-price="3.000"><i class="fa-solid fa-cart-shopping text-white text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Produto Item ou fotos dos Humbe foto1-->
+            <!--Produto Item ou fotos dos Humbe foto 2-->
+            <div class="flex gap-2">
+                <img src="./photo/hamb-2.png" alt="Humber  Duplo" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300 cursor-pointer">
+                <div >
+                    <p class="font-bold">Humberguer Duplo </p>
+                    <p class="text-sm">Pao levinho de fermenmto natural da trigou, burguer 160g, queijo prato e maionese da casa</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="text-lg font-bold">Ft 4500</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                            data-name=" Humberguer Duplo"
+                            data-price="4500"><i class="fa-solid fa-cart-shopping text-white text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Produto Item ou fotos dos Humbe foto2-->
+            <!--Produto Item ou fotos dos Humbe foto 3-->
+            <div class="flex gap-2">
+                <img src="./photo/hamb-3.png" alt="Humber  Salad " class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300 cursor-pointer">
+                <div >
+                    <p class="font-bold">Humberguer Salad </p>
+                    <p class="text-sm">Pao levinho de fermenmto natural da trigou, burguer 160g, queijo prato e maionese da casa</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="text-lg font-bold">Ft 2500</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                            data-name=" Humberguer Salad"
+                            data-price="2500"><i class="fa-solid fa-cart-shopping text-white text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Produto Item ou fotos dos Humbe foto3-->
+            <!--Produto Item ou fotos dos Humbe foto 4-->
+            <div class="flex gap-2">
+                <img src="./photo/hamb-4.png" alt="Humber  da Casa" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300 cursor-pointer">
+                <div >
+                    <p class="font-bold">Humberguer da Casa </p>
+                    <p class="text-sm">Pao levinho de fermenmto natural da trigou, burguer 160g, queijo prato e maionese da casa</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="text-lg font-bold">Ft 3500</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                            data-name=" Humberguer Duplo"
+                            data-price="4500"><i class="fa-solid fa-cart-shopping text-white text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Produto Item ou fotos dos Humbe foto4-->
+              <!--Produto Item ou fotos dos Humbe foto 5-->
+              <div class="flex gap-2">
+                <img src="./photo/hamb-5.png" alt="Humber  da Casa" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300 cursor-pointer">
+                <div >
+                    <p class="font-bold">Humberguer Vegetal</p>
+                    <p class="text-sm">Pao levinho de fermenmto natural da trigou, burguer 160g, queijo prato e maionese da casa</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="text-lg font-bold">Ft 1500</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                            data-name=" Humberguer Vegetal"
+                            data-price="1500"><i class="fa-solid fa-cart-shopping text-white text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Produto Item ou fotos dos Humbe foto5-->
+              <!--Produto Item ou fotos dos Humbe foto 6-->
+              <div class="flex gap-2">
+                <img src="./photo/hamb-6.png" alt="Humber  da Casa" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300 cursor-pointer">
+                <div >
+                    <p class="font-bold">Humberguer Com Batatas</p>
+                    <p class="text-sm">Pao levinho de fermenmto natural da trigou, burguer 160g, queijo prato e maionese da casa</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="text-lg font-bold">Ft 4500</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                            data-name=" Humberguer com Batatas"
+                            data-price="4500"><i class="fa-solid fa-cart-shopping text-white text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Produto Item ou fotos dos Humbe foto6-->
+              <!--Produto Item ou fotos dos Humbe foto 7-->
+              <div class="flex gap-2">
+                <img src="./photo/hamb-7.png" alt="Humber  da Casa" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300 cursor-pointer">
+                <div >
+                    <p class="font-bold">Humberguer com Molho</p>
+                    <p class="text-sm">Pao levinho de fermenmto natural da trigou, burguer 160g, queijo prato e maionese da casa</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="text-lg font-bold">Ft 5000</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                            data-name=" Humberguer com Molho"
+                            data-price="5000"><i class="fa-solid fa-cart-shopping text-white text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Produto Item ou fotos dos Humbe foto7-->
+              <!--Produto Item ou fotos dos Humbe foto 8-->
+              <div class="flex gap-2">
+                <img src="./photo/hamb-8.png" alt="Humber  da Casa" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300 cursor-pointer">
+                <div >
+                    <p class="font-bold">Humberguer com Cenoura</p>
+                    <p class="text-sm">Pao levinho de fermenmto natural da trigou, burguer 160g, queijo prato e maionese da casa</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="text-lg font-bold">Ft 3600</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                            data-name=" Humberguer com Cenoura"
+                            data-price="3600"><i class="fa-solid fa-cart-shopping text-white text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Produto Item ou fotos dos Humbe foto8-->
         </main>
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">Bebidas</h2>
+        </div>
+
+        <!--Div grid bebidas-->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+            <!--Foto bebida 1-->
+            <div class="flex gap-2">
+                <img src="./photo/refri-1.png" alt="Humber  da Casa" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300 cursor-pointer">
+                <div >
+                    <p class="font-bold">Coca cola</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="text-lg font-bold">Ft 250</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                            data-name="Coca cola"
+                            data-price="250"><i class="fa-solid fa-cart-shopping text-white text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+              <!--Foto bebida 1-->
+              <!--Foto bebida 2-->
+            <div class="flex gap-2">
+                <img src="./photo/refri-2.png" alt="Humber  da Casa" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300 cursor-pointer">
+                <div >
+                    <p class="font-bold">Guarana</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="text-lg font-bold">Ft 270</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                            data-name="Guarana"
+                            data-price="270"><i class="fa-solid fa-cart-shopping text-white text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+              <!--Foto bebida 2-->
+              <!--Foto bebida 1-->
+            <div class="flex gap-2">
+                <img src="./photo/refri-3.png" alt="Humber  da Casa" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300 cursor-pointer bg-white">
+                <div >
+                    <p class="font-bold">Coca cola</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="text-lg font-bold">Ft 250</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                            data-name="Coca cola"
+                            data-price="250"><i class="fa-solid fa-cart-shopping text-white text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+              <!--Foto bebida 1-->
+
+
+
+
+        </div>
+        <!--Divi grid bebidas-->
+
      </div>
      <!--Fim Menu-->
+     
     
 </body>
 </html>
