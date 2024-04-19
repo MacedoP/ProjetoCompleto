@@ -171,7 +171,7 @@ checkoutBtn.addEventListener('click', (vt)=>{
         )
     }).join("");
     const message = encodeURIComponent(cartItmesWh);
-    const phone = "+36204869457";
+    const phone = "+36204899457";
     window.open(`https://wa.me/${phone}? text=${message} Endereço: ${address.value}`, "_blank")
 
     cart.length = 0;//para zerar o carrinho 
