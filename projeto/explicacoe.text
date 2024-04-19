@@ -11,3 +11,15 @@ data-price="3.000"            | essas duas propriedadee seram utilizadas no noss
 
 lg:grid-cols-3=> media para tela com 1024px
 hidden => toma o ludar do display: none;
+
+
+=======================================================
+[Esta funcao quer dizer quando eu clicar no botao para adicionar o produto escolhido, getAttribute pega os Attribute ou valores que este elementompossui]
+menu.addEventListener('click',(e)=>{
+    let parentbutton = e.target.closest(".add-to-cart-btn")
+    if(parentbutton){
+        const nome = parentbutton.getAttribute("data-name")
+        const price = parentbutton.getAttribute("data-price")
+    }
+   
+})

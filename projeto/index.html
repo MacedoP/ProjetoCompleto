@@ -21,7 +21,7 @@
             <span class="text-white font-medium">Rua 40, Zona Verde</span>
 
             <div class="bg-green-600 text-white rounded-lg px-4 py-1 mt-5" id="date-span">
-                <span class="font-medium">Seg á Dom -18:00 as 22:00</span>
+                <span class="font-medium">Seg á Dom 18:00 as 22:00</span>
             </div>
         </div>
     </header>
@@ -36,7 +36,7 @@
      <div id="menu" >
         <main class="grid grid-cols-1 gap-8 lg:grid-cols-3 md:gap-10 mx-auto max-w-7xl md:grid-cols-2 px-4 py-4 rounded-lg mb-16  bg-orange-400 ">
             <!--Produto Item ou fotos dos Humbe foto1-->
-            <div class="flex gap-2">
+            <div class="flex gap-2 ">
                 <img src="./photo/hamb-1.png" alt="Humber  smach" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300 cursor-pointer">
                 <div >
                     <p class="font-bold">Humberguer Smach </p>
@@ -47,7 +47,7 @@
                         <button 
                             class="bg-gray-900 px-5 rounded add-to-cart-btn" 
                             data-name=" Humberguer Smach"
-                            data-price="3.000"><i class="fa-solid fa-cart-shopping text-white text-lg"></i>
+                            data-price="3000"><i class="fa-solid fa-cart-shopping text-white text-lg"></i>
                         </button>
                     </div>
                 </div>
@@ -244,12 +244,13 @@
      <!--Fim Menu-->
 
      <!--Configuracao do Modal-->
-     <div class="bg-black/60 w-full h-full  fixed top-0 left-0 z-[99] items-center justify-center hidden">
+     <div class="bg-black/60 w-full h-full  fixed top-0 left-0 z-[99] items-center justify-center hidden scroll-mt-0 overflow-y-auto" id="cart-modal">
 
         <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
             <h1 class="text-center font-bold text-2xl mb-2">Meu carrinho</h1>
 
             <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
             <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
             <p class="font-bold mt-2">Enderenço de entrega:</p>
             <input type="text" id="addres" placeholder="Digite eu enderenço:" class="w-full border-2 rounded-md my-1 p-2">
@@ -276,6 +277,7 @@
         </button>
      </footer>
      <!--Configuracao do nosso footer-->
+     <script src="./script.js"></script>
      
     
 </body>
