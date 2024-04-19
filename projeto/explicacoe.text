@@ -10,3 +10,4 @@ data-name=" Humberguer Smach" |
 data-price="3.000"            | essas duas propriedadee seram utilizadas no nosso js, para quando clicarmos no cart nos fizer qual foi clicado e quanto costa
 
 lg:grid-cols-3=> media para tela com 1024px
+hidden => toma o ludar do display: none;
