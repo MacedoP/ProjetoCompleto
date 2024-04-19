@@ -141,6 +141,11 @@ address.addEventListener("input",(evt)=>{
 
 //Configurcao do botao de finalizar pedido
 checkoutBtn.addEventListener('click', (vt)=>{
+    const open = checkHoario();
+    if(!open){
+        alert("Estamos fechado no momento!")
+        return;
+    }
     if(cart.length === 0) return;
 
     if(address.value === ""){//Nao da espaço entre sos virgulas altas
@@ -148,6 +153,19 @@ checkoutBtn.addEventListener('click', (vt)=>{
         address.classList.add("border-red-500")
         return;
     }
+
+    //CONFIURACAO PARA ENVIAR O  NOSSO PEDIDO NO WHASUP
+    const cartItmesWh = cart.map((e)=>{
+        return(
+            `${e.nome} Quantidade: (${e.quantidade}) Preço: Ft (${e.price}) |`
+        )
+    }).join("");
+    const message = encodeURIComponent(cartItmesWh);
+    const phone = "+36204869457";
+    window.open(`https://wa.me/${phone}? text=${message} Endereço: ${address.value}`, "_blank")
+
+    cart.length = 0;//para zerar o carrinho 
+    updateCartModal();
 })
 
 //Configuracao da nossa tabela de hora quando esta aberto ou fechado
