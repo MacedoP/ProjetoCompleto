@@ -143,8 +143,18 @@ address.addEventListener("input",(evt)=>{
 checkoutBtn.addEventListener('click', (vt)=>{
     const open = checkHoario();
     if(!open){
-        alert("Estamos fechado no momento!")
-        return;
+        Toastify({
+            text: "INFELIZMENTE ESTANOS FECAHDOS!",
+            duration: 3000,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "#ef4444",
+            }
+        }).showToast()
+        return; //Nao esqueça este return quando usures o Toast
     }
     if(cart.length === 0) return;
 
@@ -174,7 +184,7 @@ const checkHoario =()=>{
     const hora = data.getHours();
     
     
-    return hora < 18 && hora < 22;
+    return hora >= 18 && hora < 22;
 }
 
 const horaio = document.querySelector("#date-span")//Pegando a minha dic onde esta o nosso horario
